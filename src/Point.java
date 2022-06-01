@@ -1,5 +1,5 @@
 
-public class Point {
+public class Point implements Comparable<Point> {
 	private int V,dist;
 	public Point(int dist,int V) {
 		this.dist = dist;
