@@ -34,7 +34,6 @@ public class Main {
 			command = scanner.nextInt();
 		}
 		System.out.println();
-		scanner.close();
 		return command;
 	}
 	public static Vector<Point>[] readGraf(String path){

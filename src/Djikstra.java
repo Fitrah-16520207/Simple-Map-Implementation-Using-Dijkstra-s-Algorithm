@@ -32,6 +32,19 @@ public class Djikstra {
 			x++;
 			
 		}
-		System.out.print("from " + start + " to " + n + " : " + dist[n]+ " Simpul sebelumnya: "+ before[n] + "\n" );
+		System.out.print("Dari " + start + " ke " + n + " biaya: " + dist[n]+ " Simpul sebelumnya: "+ before[n] + "\n" );
+		System.out.print("Jalur Simpul : ");
+		Stack<Integer> jalur = new Stack<Integer>();
+		int sebelum = n;
+		jalur.push(n);
+		while(before[sebelum] != -1) {
+			jalur.push(before[sebelum]);
+			sebelum = before[sebelum];	
+		}
+		while(!jalur.isEmpty()) {
+			System.out.print(jalur.pop() );
+			if(jalur.size()>0)System.out.print( " -> ");
+		}
+		System.out.println();
 	}
 }
