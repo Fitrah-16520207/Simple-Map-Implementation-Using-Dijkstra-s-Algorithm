@@ -30,11 +30,8 @@ public class Djikstra {
 				}
 			}
 			x++;
-			System.out.print("Iterasi ke " + x +"\n" );
 			
 		}
-		for (int i=0;i<n+1;i++) {
-			System.out.print("from " + start + " to " + i + " : " + dist[i]+ " Simpul sebelumnya: "+ before[i] + "\n" );
-		}
+		System.out.print("from " + start + " to " + n + " : " + dist[n]+ " Simpul sebelumnya: "+ before[n] + "\n" );
 	}
 }
